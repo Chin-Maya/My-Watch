@@ -14,7 +14,8 @@ function updateClock() {
 
     // Get current date
     const options = { year: 'numeric', month: 'long', day: 'numeric', weekday: 'long' };
-    const dateString = now.toLocaleDateString('en-US', options);
+    // const dateString = now.toLocaleDateString('en-US', options);
+    const dateString = now.toLocaleDateString(undefined, options);
 
     // Update date on the page
     document.getElementById('date').textContent = dateString;
